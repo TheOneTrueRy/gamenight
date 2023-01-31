@@ -1,2 +1,7 @@
 import { appState } from "../AppState";
-import {}
+
+export class PlayersController{
+  drawPlayers(){
+
+  }
+}
