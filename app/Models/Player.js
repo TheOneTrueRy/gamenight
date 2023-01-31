@@ -13,9 +13,9 @@ export class Player{
     <p class="fs-1">${this.name}</p>
   </div>
   <div class="col-4 d-flex align-items-center text-light">
-    <button class="scoreButton" onclick="addScore('${this.name}')"><i class="mdi mdi-minus fs-3"></i></button>
+    <button class="scoreButton" onclick="app.playersController.minusScore('${this.name}')"><i class="mdi mdi-minus fs-3"></i></button>
     <p class="fs-1 px-4">${this.score}</p>
-    <button class="scoreButton" onclick="minusScore('${this.name}')"><i class="mdi mdi-plus fs-3"></i></button>
+    <button class="scoreButton" onclick="app.playersController.addScore('${this.name}')"><i class="mdi mdi-plus fs-3"></i></button>
   </div>
     `
   }

@@ -1,4 +1,5 @@
 import { appState } from "../AppState.js";
+import { playersService } from "../Services/PlayersService.js";
 
 export class PlayersController{
   drawPlayers(){
@@ -9,6 +10,15 @@ export class PlayersController{
       template += player.HTMLTemplate
     })
     document.getElementById('leaderboard').innerHTML = template
+  }
+
+  addScore(name){
+    playersService.addScore(name)
+    this.drawPlayers()
+  }
+  minusScore(name){
+    playersService.minusScore(name)
+    this.drawPlayers()
   }
 
   constructor(){
