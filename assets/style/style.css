@@ -1,1 +1,38 @@
 /* BASIC STYLES HERE */
+
+/* SECTION Elements & Other */
+
+body{
+  background-color: rgb(77, 76, 76)
+}
+
+img{
+  border: 2px solid white;
+  box-shadow: 0 0 10px white;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+
+/* SECTION Classes */
+
+.scoreButton{
+  height: 3em;
+  width: 3em;
+  background-color: rgb(77, 76, 76);
+  border-radius: 50%;
+}
+
+/* SECTION IDs */
+
+#gamenight{
+  text-shadow:  0 0 15px #fff;
+  font-family: 'Pacifico', cursive;
+  font-size: 3em;
+}
+
+#leaderboard{
+  border: 2px solid white;
+  box-shadow: 0 0 10px white;
+  border-radius: 6px;
+}
