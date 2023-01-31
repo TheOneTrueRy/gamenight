@@ -2,7 +2,11 @@ export class Player{
   constructor(name, score, img){
     this.name = name
     this.score = score;
-    this.img = img
+    if(img){
+      this.img = img
+    }else{
+      this.img = '//via.placeholder.com/100'
+    }
   }
   get HTMLTemplate(){
     return `

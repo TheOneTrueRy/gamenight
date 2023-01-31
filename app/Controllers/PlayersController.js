@@ -1,5 +1,6 @@
 import { appState } from "../AppState.js";
 import { playersService } from "../Services/PlayersService.js";
+import { getFormData } from "../Utils/FormHandler.js";
 
 export class PlayersController{
   drawPlayers(){
@@ -18,6 +19,14 @@ export class PlayersController{
   }
   minusScore(name){
     playersService.minusScore(name)
+    this.drawPlayers()
+  }
+
+  createPlayer(){
+    window.event.preventDefault()
+    const form = window.event.target
+    let playerData = getFormData(form)
+    playersService.createPlayer(playerData)
     this.drawPlayers()
   }
 

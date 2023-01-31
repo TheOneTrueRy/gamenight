@@ -13,6 +13,11 @@ class PlayersService{
       player.score = 0
     }
   }
+
+  createPlayer(playerData){
+    let newPlayer = new Player(playerData.name, playerData.score, playerData.img)
+    appState.players.push(newPlayer)
+  }
 }
 
 export const playersService = new PlayersService()
