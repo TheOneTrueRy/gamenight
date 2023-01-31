@@ -1,16 +1,11 @@
 export class Player{
   constructor(name, score, img){
-    if(name == undefined){
-      window.alert("You can't add a player with no Name!")
-      return
+    this.name = name
+    this.score = 0
+    if(img){
+      this.img = img
     }else{
-      this.name = name
-      this.score = 0;
-      if(img){
-        this.img = img
-      }else{
-        this.img = '//via.placeholder.com/100'
-      }
+      this.img = '//via.placeholder.com/100'
     }
   }
   get HTMLTemplate(){
