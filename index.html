@@ -25,12 +25,25 @@
         <div class="col-12 pt-2 pb-5 text-light text-center">
           <p id="gamenight">GAMENIGHT</p>
         </div>
-        <div class="col-6 offset-3">
+        <div class="col-12 col-md-8 offset-md-2 px-4">
           <div id="leaderboard" class="row">
-
           </div>
-          <div class="col-6 offset-3">
-            
+          <div class="col-8 col-md-6 offset-2 offset-md-3">
+            <div class="row form-card mt-5 py-4">
+              <form action="" onsubmit="app.playersController.createPlayer()" class="">
+                <div class="col-12 px-3 text-light">
+                  <label for="name" class="pb-2">Name</label>
+                  <input type="text" placeholder="Name" class="form-control">
+                </div>
+                <div class="col-12 px-3 text-light">
+                  <label for="img" class="py-2">IMG (Optional)</label>
+                  <input type="text" placeholder="IMG Link Address" class="form-control">
+                </div>
+                <div class="col-12 px-3">
+                  <button class="formButton form-control mt-4">Add Player</button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>

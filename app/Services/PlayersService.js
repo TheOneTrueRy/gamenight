@@ -15,7 +15,7 @@ class PlayersService{
   }
 
   createPlayer(playerData){
-    let newPlayer = new Player(playerData.name, playerData.score, playerData.img)
+    let newPlayer = new Player(playerData.name, 0, playerData.img)
     appState.players.push(newPlayer)
   }
 }

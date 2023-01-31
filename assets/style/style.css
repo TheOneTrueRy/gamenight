@@ -23,6 +23,20 @@ img{
   border-radius: 50%;
 }
 
+.form-card{
+  background-color: rgb(77, 76, 76);
+  border-radius: 10px;
+  box-shadow: 0 0 10px white;
+}
+
+.formButton{
+  box-shadow: 0 0 5px white;
+}
+
+.nomb{
+  margin-bottom: 0;
+}
+
 /* SECTION IDs */
 
 #gamenight{
