@@ -1,4 +1,4 @@
-import { appState } from "../AppState";
+import { appState } from "../AppState.js";
 
 export class PlayersController{
   drawPlayers(){
@@ -12,6 +12,7 @@ export class PlayersController{
   }
 
   constructor(){
+    console.log('constructor ran');
     this.drawPlayers()
   }
 }
